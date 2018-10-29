@@ -62,7 +62,7 @@ export default class PostTypeJitsi extends React.PureComponent {
         let content;
         let subtitle;
         if (props.meeting_status === 'STARTED') {
-            preText = `${this.props.creatorName} has started a meeting`;
+            preText = `${this.props.creatorName} has started a Zimbra meeting`;
             content = (
                 <a
                     className='btn btn-lg btn-primary'
@@ -128,7 +128,7 @@ export default class PostTypeJitsi extends React.PureComponent {
             );
         }
 
-        let title = 'Jitsi Meeting';
+        let title = 'Join Here';
         if (props.meeting_topic) {
             title = props.meeting_topic;
         }
